@@ -39,4 +39,4 @@ jobs:
           chmod +x ./engines/fairy-stockfish-largeboard_x86-64  
           chmod +x ./engines/stockfish-ubuntu-x86-64-sse41-popcnt
           chmod +x ./engines/stockfish
-          python3 lichess-bot.py -u
+          python3 lichess-bot.py
