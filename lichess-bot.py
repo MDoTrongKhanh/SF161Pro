@@ -2383,4 +2383,3 @@ if __name__ == "__main__":
             time.sleep(10 if restart else 0)
     except Exception:
         logger.exception("Quitting lichess-bot due to an error:")
->>>>>>> 161f4fc942aa83566326711e9500ec58493bd084
