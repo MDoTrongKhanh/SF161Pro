@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 #!/usr/bin/sh
 
 python3 test_bot/buggy_engine.py
+=======
+#!/usr/bin/sh
+
+python3 test_bot/buggy_engine.py
+>>>>>>> 161f4fc942aa83566326711e9500ec58493bd084

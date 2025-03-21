@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 # Normalize line endings
 * text=auto
 engines/syzygy/* filter=lfs diff=lfs merge=lfs -text
+=======
+# Normalize line endings
+* text=auto
+engines/syzygy/* filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 161f4fc942aa83566326711e9500ec58493bd084
