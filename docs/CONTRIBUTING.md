@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Contributing to lichess-bot
 
 We welcome your contributions! There are multiple ways to contribute.
