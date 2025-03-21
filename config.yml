@@ -89,15 +89,15 @@ engine:                            # Engine settings.
 #   Hash: 256
 
   uci_options:                     # Arbitrary UCI options passed to the engine.
-    Move Overhead: 220            # Increase if your bot flags games too often.
-    Threads: 2                    # Max CPU threads the engine can use.
-    Hash: 256                     # Max memory (in megabytes) the engine can allocate.
+    Move Overhead: 190            # Increase if your bot flags games too often.
+    Threads: 4                    # Max CPU threads the engine can use.
+    Hash: 4096                     # Max memory (in megabytes) the engine can allocate.
     #SyzygyPath: "./engines/syzygy/"       # Paths to Syzygy endgame tablebases that the engine reads.
     UCI_ShowWDL: true             # Show the chance of the engine winning.
-    go_commands:                   # Additional options to pass to the UCI go command.
+#    go_commands:                   # Additional options to pass to the UCI go command.
 #     nodes: 1                     # Search so many nodes only.
 #     depth: 5                     # Search depth ply only.
-      movetime: 100               # Integer. Search exactly movetime milliseconds.
+  movetime: 100               # Integer. Search exactly movetime milliseconds.
 
 # xboard_options:                  # Arbitrary XBoard options passed to the engine.
 #   cores: "4"
@@ -196,6 +196,7 @@ matchmaking:
   challenge_timeout: 1            # Create a challenge after being idle for 'challenge_timeout' minutes. The minimum is 1 minute.
   challenge_initial_time:          # Initial time in seconds of the challenge (to be chosen at random).
     - 30
+    - 60
     - 180
   challenge_increment:             # Increment in seconds of the challenge (to be chosen at random).
     - 0
@@ -204,13 +205,13 @@ matchmaking:
 #    - 2
   opponent_min_rating: 2600         # Opponents rating should be above this value (600 is the minimum rating in lichess).
   opponent_max_rating: 4000        # Opponents rating should be below this value (4000 is the maximum rating in lichess).
-  #opponent_rating_difference: 300  # The maximum difference in rating between the bot's rating and opponent's rating.
+  opponent_rating_difference: 300  # The maximum difference in rating between the bot's rating and opponent's rating.
   rating_preference: "high"        # One of "none", "high", "low".
   opponent_allow_tos_violation: false # Set to 'true' to allow challenging bots that violated the Lichess Terms of Service.
   challenge_mode: "rated"         # Set it to the mode in which challenges are sent. Possible options are 'casual', 'rated' and 'random'.
   challenge_filter: none           # If a bot declines a challenge, do not issue a similar challenge to that bot. Possible options are 'none', 'coarse', and 'fine'.
   block_list:                      # The list of bots that will not be challenged
-    #- Nikitosikbot_v2
+    - Nikitosikbot_v2
     - TheMatrix2025
     - ToromBot
 
