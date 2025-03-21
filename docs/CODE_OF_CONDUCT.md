@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Code of Conduct
 
 ## Our Pledge
