@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """The main module that controls lichess-bot."""
 import argparse
 import chess
