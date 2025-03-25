@@ -89,7 +89,7 @@ engine:                            # Engine settings.
 #   Hash: 256
 
   uci_options:                     # Arbitrary UCI options passed to the engine.
-    Move Overhead: 195            # Increase if your bot flags games too often.
+    Move Overhead: 100            # Increase if your bot flags games too often.
     Threads: 4                    # Max CPU threads the engine can use.
     Hash: 4096                     # Max memory (in megabytes) the engine can allocate.
     #SyzygyPath: "./engines/syzygy/"       # Paths to Syzygy endgame tablebases that the engine reads.
@@ -213,7 +213,7 @@ matchmaking:
   challenge_filter: none           # If a bot declines a challenge, do not issue a similar challenge to that bot. Possible options are 'none', 'coarse', and 'fine'.
   block_list:                      # The list of bots that will not be challenged
     #- Nikitosikbot_v2
-    - TheMatrix2025
+    #- TheMatrix2025
     #- ToromBot
 
 # overrides:                       # List of overrides for the matchmaking specifications above. When a challenge is created, either the default specification above or one of the overrides will be randomly chosen.
